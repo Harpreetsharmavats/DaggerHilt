@@ -1,4 +1,5 @@
-package com.example.cleanarchitecture.data.model
+package com.example.daggerhilt.domain.model
+
 
 data class DomainUserResponse(
     val info: Info,

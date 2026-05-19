@@ -1,4 +1,6 @@
-package com.example.cleanarchitecture.data.model
+package com.example.daggerhilt.domain.model
+
+
 
 data class Result(
     val cell: String,

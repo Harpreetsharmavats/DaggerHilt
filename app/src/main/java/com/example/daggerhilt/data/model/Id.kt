@@ -1,4 +1,4 @@
-package com.example.daggerhilt.domain.model
+package com.example.daggerhilt.data.model
 
 data class Id(
     val name: String,

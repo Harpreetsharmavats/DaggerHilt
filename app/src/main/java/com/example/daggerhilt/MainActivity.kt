@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.daggerhilt.presentation.ui.UserScreen
 import com.example.daggerhilt.presentation.ui.theme.DaggerHiltTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             DaggerHiltTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                   innerPadding
+                    UserScreen(modifier = Modifier.padding(innerPadding))
 
                 }
             }

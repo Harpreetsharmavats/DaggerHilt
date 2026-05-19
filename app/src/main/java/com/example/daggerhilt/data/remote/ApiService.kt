@@ -1,7 +1,7 @@
 package com.example.daggerhilt.data.remote
 
-import com.example.cleanarchitecture.data.model.DomainUserResponse
-import com.example.cleanarchitecture.data.model.RandomResponse
+import com.example.daggerhilt.data.model.RandomResponse
+import com.example.daggerhilt.domain.model.DomainUserResponse
 import retrofit2.http.GET
 
 

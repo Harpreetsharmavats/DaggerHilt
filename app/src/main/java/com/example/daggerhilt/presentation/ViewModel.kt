@@ -3,14 +3,16 @@ package com.example.daggerhilt.presentation
 import android.text.BoringLayout
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.cleanarchitecture.data.model.DomainUserResponse
 import com.example.daggerhilt.domain.UseCases.UserUseCase
-import jakarta.inject.Inject
+import com.example.daggerhilt.domain.model.DomainUserResponse
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class ViewModel @Inject constructor(
+@HiltViewModel
+class UserViewModel @Inject constructor(
     val useCase: UserUseCase
 ) : ViewModel() {
     private val _uiState = MutableStateFlow(UIState())

@@ -60,8 +60,7 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(libs.retrofit)
-
-    // Converter for JSON (choose one, Gson is most common)
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")    // Converter for JSON (choose one, Gson is most common)
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
     implementation("io.coil-kt.coil3:coil-compose:3.0.4")
 // If you need network support (loading from URLs), also add:

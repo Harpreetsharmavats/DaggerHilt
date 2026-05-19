@@ -1,6 +1,6 @@
 package com.example.daggerhilt.domain.UseCases
 
-import com.example.cleanarchitecture.data.model.DomainUserResponse
+import com.example.daggerhilt.domain.model.DomainUserResponse
 import com.example.daggerhilt.domain.repository.UserRepository
 import javax.inject.Inject
 
