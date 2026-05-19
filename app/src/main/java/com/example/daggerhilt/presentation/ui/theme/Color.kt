@@ -1,4 +1,4 @@
-package com.example.daggerhilt.ui.theme
+package com.example.daggerhilt.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
