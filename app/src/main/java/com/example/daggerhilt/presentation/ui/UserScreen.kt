@@ -28,11 +28,14 @@ fun UserScreen(modifier: Modifier = Modifier) {
             }
             else-> {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
-                    items(state.result){ result->
-                        Text(text = result.results.toString() )
+                    items(state.result.flatMap { it.results }) { user ->
+
+                        Text(text = user.name.first)
+
                     }
                 }
             }
+
         }
     }
 

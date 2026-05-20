@@ -6,9 +6,14 @@ import com.example.daggerhilt.domain.repository.UserRepository
 import javax.inject.Inject
 
 class UserRepositoryImpl @Inject constructor(
-    val api : ApiService
+    private val api: ApiService
 ) : UserRepository {
     override suspend fun getUser(): List<DomainUserResponse> {
-        return api.getUser()
+        val response = api.getUser()
+        return response.results.map { DomainUserResponse(
+            results = listOf(it),
+            info = response.info
+        )
+        }
     }
-}
+    }
